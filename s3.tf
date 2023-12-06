@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "backups" {
-  bucket = "dk-mongo-backups-dec"
+  bucket = "dk-mongo-backups-dec-wed"
 }
 
 resource "aws_s3_bucket_ownership_controls" "example" {
