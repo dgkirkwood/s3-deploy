@@ -24,5 +24,5 @@ resource "aws_s3_bucket_acl" "public-read" {
     aws_s3_bucket_ownership_controls.example,
     aws_s3_bucket_public_access_block.example, ]
   bucket = aws_s3_bucket.backups.id
-  acl = "private"
+  acl = "public-read"
 }
