@@ -32,5 +32,4 @@ spec:
             - containerPort: 3000
           env:
             - name: MONGO_URL
-              value: mongodb://knote:abc123@3.26.212.53:27017
           imagePullPolicy: Always
