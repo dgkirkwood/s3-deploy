@@ -39,4 +39,4 @@ jobs:
       run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_VULNS"
 
     - name: Run wiz misconfigurations scan
-      run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_MISSCONFIGS"
+      run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_MISCONFIGS"
