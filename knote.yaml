@@ -33,3 +33,7 @@ spec:
           env:
             - name: MONGO_URL
           imagePullPolicy: Always
+          securityContext:
+            capabilities:
+              drop:
+                - ALL
