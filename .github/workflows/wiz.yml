@@ -32,11 +32,11 @@ jobs:
         WIZ_CLIENT_ID: ${{ secrets.WIZ_CLIENT_ID }}
         WIZ_CLIENT_SECRET: ${{ secrets.WIZ_CLIENT_SECRET }}
 
-    - name: Run wiz secrets scan
+    - name: Run Wiz secrets scan
       run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_SECRET"
 
-    - name: Run wiz vulnerabilities scan
+    - name: Run Wiz vulnerabilities scan
       run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_VULNS"
 
-    - name: Run wiz misconfigurations scan
+    - name: Run Wiz misconfigurations scan
       run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_MISCONFIGS"
