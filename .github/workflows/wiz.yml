@@ -36,4 +36,4 @@ jobs:
       run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_SECRET"
 
     - name: Run wiz vulnerabilities scan
-      run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_VULNA"
+      run: ./wizcli dir scan --path $SCAN_PATH --policy "$POLICY_VULNS"
